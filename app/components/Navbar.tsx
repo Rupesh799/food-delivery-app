@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="h-12  bg-primary-primary1 text-text-text1 flex items-center justify-between px-5 py-3 lg:px-20 lg:py-8 md:px-20 md:py-8">
             {/*left links*/}
-            <div className="hidden md:flex gap-5 flex-1">
+            <div className="hidden md:flex gap-5 flex-1 font-bold">
                 <Link href="/">Home</Link>
                 <Link href="/menu">Menu</Link>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
 
             {/*right links*/}
-            <div className="hidden md:flex items-center gap-5 flex-1 justify-end">
+            <div className="hidden md:flex items-center gap-5 flex-1 justify-end font-bold">
                 <Modes/>
                 <Link href="/contact">Contact</Link>
                         <CartIcon/>

@@ -12,25 +12,25 @@ const Footer = () => {
                 <Link href="/" className="font-bold text-3xl border-b-2 border-primary-primary2">Deliver It</Link>
             </div>
             <div className="flex flex-col ">
-                <span className="font-bold text-2xl">Links</span>
-                <div className="flex flex-col items-center gap-5 mt-4">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
+                <span className="font-bold text-2xl text-center">Links</span>
+                <div className="flex flex-col items-center gap-5 mt-4 xl:flex-row">
+                    <Link href="/" >Home</Link>
+                    <Link href="/about" >About</Link>
                     <Link href="/menu">Menu</Link>
                     <Link href="/contact">Contact</Link>
 
                 </div>
             </div>
             <div>
-                <span className="font-bold text-2xl">Social Links</span>
-                <div className="flex flex-col items-center gap-5 mt-4 text-xl cursor-pointer">
-                    <a href="">
+                <span className="font-bold text-2xl text-center">Social Links</span>
+                <div className="flex flex-col items-center justify-center gap-5 mt-4 text-xl cursor-pointer xl:flex-row ">
+                    <a href="" className='hover:text-red-400'>
                         <AiFillInstagram/>
                     </a>
-                    <a href="">
+                    <a href="" className='hover:text-blue-600'>
                         <FaFacebook/>
                     </a>
-                    <a href="">
+                    <a href="" className='hover:text-black-600'>
                         <FaTiktok/>
                     </a>
                 </div>

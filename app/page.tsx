@@ -5,7 +5,7 @@ import Offers from "@/app/components/Offers";
 
 export default function Home() {
   return (
-   <div>
+   <div className="overflow-hidden">
      <Slider/>
      <Featured/>
      <Offers/>
