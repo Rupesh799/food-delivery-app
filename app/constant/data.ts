@@ -90,4 +90,40 @@ export const featuredProducts:Products = [
             },
         ]
     },
+];
+
+type Menu ={
+    id:number;
+    slug:string;
+    title:string;
+    desc?:string;
+    img?:string;
+    color:string;
+}[];
+
+export const menu: Menu =[
+    {
+        id:1,
+        slug:"burgers",
+        title:"burgers",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
+        img:"/temp/b2.png",
+        color:"white"
+    },
+    {
+        id:2,
+        slug:"pizza",
+        title:"Pizza",
+        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
+        img:"/temp/c1.png",
+        color:"black"
+    },{
+        id:3,
+        slug:"momo",
+        title:"Momo",
+        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
+        img:"/temp/c3.png",
+        color:"white"
+    },
+
 ]
