@@ -92,6 +92,97 @@ export const featuredProducts:Products = [
     },
 ];
 
+export const burgers : Products=[
+    {
+        id:1,
+        title:"Ham Burger",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        img:"/temp/item1.png",
+        price:250,
+        options:[
+            {
+                title:"small",
+                additionalPrice:0
+            },
+            {
+                title:"medium",
+                additionalPrice:100
+            },
+            {
+                title:"large",
+                additionalPrice:200
+            }
+        ]
+
+    },
+    {
+        id:2,
+        title:"Chicken Burger",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        img:"/temp/item1.png",
+        price:250,
+        options:[
+            {
+                title:"small",
+                additionalPrice:0
+            },
+            {
+                title:"medium",
+                additionalPrice:100
+            },
+            {
+                title:"large",
+                additionalPrice:200
+            }
+        ]
+    },
+
+    {
+        id:3,
+        title:"Cheese Burger",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        img:"/temp/item1.png",
+        price:250,
+        options:[
+            {
+                title:"small",
+                additionalPrice:0
+            },
+            {
+                title:"medium",
+                additionalPrice:100
+            },
+            {
+                title:"large",
+                additionalPrice:200
+            }
+        ]
+    }
+];
+
+export const singleProduct: Product={
+    id:1,
+    title:"Ham Burger",
+    desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    img:"/temp/item1.png",
+    price:250,
+    options:[
+        {
+            title:"small",
+            additionalPrice:0
+        },
+        {
+            title:"medium",
+            additionalPrice:100
+        },
+        {
+            title:"large",
+            additionalPrice:200
+        }
+    ]
+}
+
+
 type Menu ={
     id:number;
     slug:string;
@@ -106,24 +197,26 @@ export const menu: Menu =[
         id:1,
         slug:"burgers",
         title:"burgers",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
-        img:"/temp/b2.png",
-        color:"white"
+        desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus ",
+        img:"/temp/bur.png",
+        color:"black"
     },
     {
         id:2,
         slug:"pizza",
         title:"Pizza",
-        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
+        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing ",
         img:"/temp/c1.png",
         color:"black"
     },{
         id:3,
         slug:"momo",
         title:"Momo",
-        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus voluptatibus veniam? Vel magnam, esse eum doloremque et, quod impedit necessitatibus velit ut consequatur quos maxime. Laborum, non ex?",
+        desc:"Pizza Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quo accusamus ",
         img:"/temp/c3.png",
-        color:"white"
+        color:"black"
     },
 
-]
+];
+
+
