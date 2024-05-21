@@ -5,9 +5,9 @@ import { FaTrash } from 'react-icons/fa';
 
 const CartPage = () => {
     return (
-        <div className="h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] flex flex-col  lg:flex-row xl:flex-row">
+        <div className="h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col  lg:flex-row xl:flex-row">
             {/* items constainer */}
-            <div className=' p-4 flex flex-col justify-center overflow-scroll lg:overflow-auto md:overflow-auto lg:h-full lg:w-2/3 2xl:w-1/2 lg:px-20 xl:px-40'>
+            <div className=' p-4 flex flex-col justify-center overflow-scroll lg:overflow-hidden md:overflow-hidden lg:h-full lg:w-2/3 2xl:w-1/2 lg:px-20 xl:px-40'>
                 {/* single item */}
                 <div className='flex justify-between items-center font-bold mb-4 '>
                     <Image src="/temp/item1.png" alt='' height={100} width={100}/>

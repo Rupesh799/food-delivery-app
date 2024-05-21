@@ -7,7 +7,7 @@ import { featuredProducts } from "../constant/data";
 
 const Featured = () => {
   return (
-    <div className="w-full overflow-hidden mt-6">
+    <div className="w-full overflow-scroll xl:no-scrollbar mt-6">
       {/*wrapper*/}
       <div className="w-max flex flex-nowrap">
         {/*single item*/}

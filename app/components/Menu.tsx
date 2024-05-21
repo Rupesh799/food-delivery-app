@@ -37,7 +37,7 @@ const MenuBar = () => {
             <Image src="/temp/close.png" alt="logo"  height={20} width={20} className="dark:invert"  onClick={()=>setOpen(false)}/>
                 )}
 
-            {open && (<div className="w-full bg-primary-primary3 backdrop-blur-sm text-yellow-500 font-bold absolute left-0 top-24 h-[calc(100vh-6rem)] text-2xl flex flex-col justify-center items-center gap-6 z-10 focus:text-yellow-500">
+            {open && (<div className="w-full bg-primary-primary3 backdrop-blur-xl text-text1 font-bold absolute left-0 top-24 h-[calc(100vh-6rem)] text-2xl flex flex-col justify-center items-center gap-6 z-10 focus:text-yellow-500">
                 {
                     links.map((link)=>(
                         <Link href={link.url}  key={link.id} onClick={()=>setOpen(false)}>{link.title}</Link>
