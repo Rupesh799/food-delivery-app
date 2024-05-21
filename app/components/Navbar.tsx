@@ -35,6 +35,7 @@ const Navbar = () => {
                 <Modes/>
                 <Link href="/contact" className=' focus:text-yellow-500'>Contact</Link>
                         <CartIcon/>
+                      
                 {!user ? <Link href="/login" className=' focus:text-yellow-500'>Login</Link>:
                     <Link href="/order" className=' focus:text-yellow-500'>Orders</Link>
                 }

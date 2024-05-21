@@ -13,6 +13,8 @@ const Price = ({price, id, options}:ProductProps) => {
     const [selected, setSelected] = useState(0);
     const [quantity, setQuantity] = useState(1);
 
+    //for changing the price according to the quantity, selected items etc
+
     useEffect(()=>{
         setTotal(quantity* (options ? price+options[selected].additionalPrice : price));
 
