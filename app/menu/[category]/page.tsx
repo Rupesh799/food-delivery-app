@@ -1,16 +1,33 @@
-import { burgers } from '@/app/constant/data';
+import { ProductType } from '@/app/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Category = () => {
+
+const getAllCaterogyProduct = async(category:string)=>{
+    const res = await fetch(`http://localhost:3000/api/products?cat=${category}`,{
+        cache:"no-store",
+    })
+    if(!res.ok){
+        throw new Error("Error fetching category product")
+    }
+    return res.json()
+}
+
+type Props ={
+     params:{category:string}
+}
+
+const AllCategoryProducts = async({params}:Props) => {
+
+    const allProducts:ProductType[] = await getAllCaterogyProduct(params.category)
     return (
         <div className='flex flex-wrap text-text-1'>
-           {burgers.map((item)=>(
+           {allProducts.map((item)=>(
                     <Link  className="w-full h-[60vh] group border-r-2 border-b-2 border-t-2 md:w-1/2 xl:w-1/3" href={`/product/${item.id}`} key={item.id}>
 
                         <div className='relative h-[70%]'>
-                            {item.img && <Image src={item.img} alt='image' fill className='object-contain'/>}
+                            {item.image && <Image src={item.image} alt='image' fill className='object-contain'/>}
                         </div>
 
                         <div className='flex justify-between items-center h-[30%] p-8 mx-5 font-bold'>
@@ -24,4 +41,4 @@ const Category = () => {
     );
 };
 
-export default Category;
+export default AllCategoryProducts;

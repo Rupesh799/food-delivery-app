@@ -4,6 +4,7 @@ import Link from "next/link";
 import MenuBar from "@/app/components/Menu";
 import CartIcon from "@/app/components/CartIcon";
 import Modes from "@/app/components/Modes";
+import UserLinks from './UserLinks';
 
 const Navbar = () => {
     const user = false;
@@ -36,9 +37,7 @@ const Navbar = () => {
                 <Link href="/contact" className=' focus:text-yellow-500'>Contact</Link>
                         <CartIcon/>
                       
-                {!user ? <Link href="/login" className=' focus:text-yellow-500'>Login</Link>:
-                    <Link href="/order" className=' focus:text-yellow-500'>Orders</Link>
-                }
+               <UserLinks/>
         </div>
         </div>
     );
